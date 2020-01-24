@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.cw {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+
+
+ .current {
+   margin-top: 100px;
+   align-items: center;
+ }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.btn {
+margin: 150px 0;
+margin-top: 20px;
+width: auto;
+}
+
+
+
+.table {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin-top: 50px ;
+  margin-bottom: 100px;
+  border:5px solid;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+
+}
+
+
+
+.ct {
+  display: flex;
+  justify-content: space-between;
+  margin:20px;
+}
+
+.cities {
+  padding-left: 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg {
+  padding: px;
+  margin: 20px;
+  border: 1px solid #BFBFBF;
+  background-color: rgb(100, 70, 70);
+  border-radius: 50px;
+  border: 3px solid;
+}
+ .current-w {
+   font-size: 20px;
+
+ }
+
+
+ .city-weather {
+
+ }
+
+.city-weather {
+  align-items: center;
+}
+
+.navbar {
+  height:50px;
+  display:flex;
+  flex-direction:row-start;
+  margin-bottom:5px;
+  padding-bottom:60px;
+  padding-left:20px;
+  border-bottom: 3px solid black;
+
+
+  background-color:rgba(12, 12, 15, 0.534);
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
