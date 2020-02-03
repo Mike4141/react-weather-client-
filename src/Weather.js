@@ -7,6 +7,8 @@ const Weather = props => {
 
   return (
     <div className="city-weather">
+      <h1 className="current">Current Weather!</h1>
+
       <h2>{data.name}</h2>
 
       <div className="icon">
@@ -16,8 +18,8 @@ const Weather = props => {
           alt="Weather Icon"
         />
         <u>
-          <span>{data.weather[0].main}</span>&nbsp;
-          <span>{Math.floor(data.main.temp)}&deg;F</span>
+          <span className="temp">{data.weather[0].main}</span>&nbsp;
+          <span className="temp">{Math.floor(data.main.temp)}&deg;F</span>
         </u>
       </div>
 

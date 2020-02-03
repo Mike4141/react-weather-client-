@@ -5,83 +5,51 @@ class Home extends Component {
   render() {
     console.log(this.props.cityList);
     return (
-      <div className="centered">
+      <div>
         <div className="navbar">
-          <h1>My Weather</h1>
+          <link
+            href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC&display=swap"
+            rel="stylesheet"
+          />
+          <h2>My Weather</h2>
         </div>
 
-        <form onSubmit={this.props.handleAddCity} className="bg">
-          <h1>MyWeather</h1>
+        <main>
+          <div className="bg">
+            <form onSubmit={this.props.handleAddCity}>
+              <div className="w-header">
+                <h1>My Weather</h1>
+              </div>
 
-          <p>The current weather for your favorite cities!</p>
-
-          {this.props.error && <p>Invalid Search</p>}
-          {/* handleInputChange = e => {
-    console.log("stored cities");
-    this.setState({ newCityName: e.target.value });
-  };
-
-  handleAddCity = e => {
-    e.preventDefault();
-    console.log(`/api/weather/${this.state.newCityName}`);
-    console.log(this.state.newCityName);
-
-    this.setState({ error: false });
-    fetch(`/api/weather/${this.state.newCityName}`)
-      .then(res => {
-        if (res.ok) {
-          return res.json();
-        }
-        throw new Error(res.status);
-      })
-      .then(weather => {
-        console.log(weather);
-        this.setState({ weather });
-        fetch("/api/cities", {
-          method: "post",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ city: this.state.newCityName })
-        })
-          .then(res => res.json())
-          .then(res => {
-            this.getCityList();
-            this.setState({ newCityName: "" });
-            console.log();
-          });
-      })
-      .catch(() => {
-        console.log("invalid search");
-        this.setState({ error: true });
-     });
-  }; */}
+              <div className="changes">
+                <p>The current weather for your favorite cities!</p>
+              </div>
+              {this.props.invalidSearchError && <p>Invalid Search</p>}
+              {this.props.duplicateError && <p>City Already Exist</p>}
 
 
-    
-            <input
-              placeholder="New city name..."
-              type="text"
-              class="form-control"
-              value=""
-              value={this.props.newCityName}
-              onChange={this.props.handleInputChange}
-              required
-            />
-            {/* handleInputChange = e => {
-    console.log("stored cities");
-    this.setState({ newCityName: e.target.value });
-  }; */}
+              
+              <div className="flex">
+              <input
+                placeholder="New city name..."
+                type="text"
+                value=""
+                value={this.props.newCityName}
+                onChange={this.props.handleInputChange}
+                required
+              />
 
-
-
-
-
-            <button className="btn" color="primary">
-              Add City
-            </button>
-        </form>
-        <h1 className="current">Current Weather</h1>
-
-
+              <button className="btn" color="primary">
+                Add City
+              </button>
+              </div>
+            </form>
+          </div>
+        </main>
 
 
 
@@ -89,33 +57,18 @@ class Home extends Component {
           {this.props.cityList.length === 0 && <li>No cities added yet.</li>}
           {this.props.cityList.length > 0 && <li>Select a city.</li>}
         </div>
-        {/* class App extends Component {
-  constructor(props) {
-    super(props);
+        
 
-    this.state = {
-      weather: null,
-      cityList: [],
-      newCityName: "",
-      error: false
-    };
-  } */}
-
-
-        <ul className="cities">
+        
+         <div  className="cities">
+        <ul>
           {this.props.cityList.map(
             (city, i) =>
               console.log(city) || (
                 <li className="ct" key={i}>
-                  <span onClick={() => this.props.handleChangeCity(city.name)}>
+                  <span className="selector" onClick={() => this.props.handleChangeCity(city.name)}>
                     {city.name}
                   </span>
-                  {/* handleChangeCity = e => {
-                    console.log("city changed to", e);
-                    this.getWeather(e);
-                  }; */}
-
-
 
                   <button
                     className="delete-btn"
@@ -124,39 +77,12 @@ class Home extends Component {
                     Delete
                   </button>
                 </li>
-                  // deleteCity = cityId => {
-                  //   this.setState({
-                  //     cityList: this.state.cityList.filter(city => {
-                  //       return cityId != city.id;
-                  //     })
-                  //   });
-                  // };
-                  // handleDelete = cityId => {
-                  //   console.log("deleted", cityId);
-                
-                  //   fetch(`/api/cities/${cityId}`, {
-                  //     method: "DELETE"
-                  //   }).then(res => {
-                  //     if (res.ok) {
-                  //       this.deleteCity(cityId);
-                  //     }
-                  //   });
-                  // };
-                
               )
           )}
         </ul>
+        </div>
 
         <Weather data={this.props.weather} />
-        {/* getWeather = city => {
-    fetch(`/api/weather/${city}`)
-      .then(res => res.json())
-      .then(weather => {
-        console.log(weather);
-        this.setState({ weather });
-      }); */}
-  
-
       </div>
     );
   }

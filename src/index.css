@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.city-weather {
-  align-items: center;
-
-}
 
 
 
@@ -19,16 +15,3 @@ code {
     monospace;
 }
 
-.centered {
-  text-align: center;
-}
-
-.navbar {
-height:50px;
-display:flex;
-flex-direction:row-start;
-margin-bottom:5px;
-background-color:rgba(12, 12, 15, 0.534);
-font-family: 'Roboto', sans-serif;
-font-size:13px;
-}
