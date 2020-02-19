@@ -45,6 +45,7 @@ input{
 }
 
 
+
 .cities:focus {
   background-color: yellow;
   margin:auto;
@@ -54,6 +55,11 @@ input{
 .selector {
   cursor: pointer;
 }
+
+.selector:hover {
+  color: red;
+}
+
 
 .select {
   margin-top: 100px;
