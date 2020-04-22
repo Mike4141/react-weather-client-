@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Weather from "./Weather";
+import Weather from "../Weather/Weather";
 
 class Home extends Component {
 
