@@ -15,7 +15,7 @@ class App extends Component {
       invalidSearchError: false,
       duplicateError: false
     };
-  }
+  };
 
   handleInputChange = e => {
     console.log("stored cities");
@@ -27,13 +27,18 @@ class App extends Component {
     console.log(`${apiBaseUrl}/api/weather/${this.state.newCityName}`);
     console.log(this.state.newCityName);
 
-    this.setState({ error: false });
+    this.setState({ 
+      error: false,
+      invalidSearchError:false,
+      duplicateError:false,
+    });
+
     fetch(`${apiBaseUrl}/api/weather/${this.state.newCityName}`)
       .then(res => {
         console.log(res);
         if (res.ok) {
           return res.json();
-        }
+        };
         throw new Error(res.status);
         //return res.json();
       })
