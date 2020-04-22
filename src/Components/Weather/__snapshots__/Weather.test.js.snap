@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weather component with data 1`] = `
+<div
+  className="city-weather"
+>
+  <h1
+    className="current"
+  >
+    Current Weather!
+  </h1>
+  <h2>
+    Oklahoma
+  </h2>
+  <div
+    className="icon"
+  >
+    <img
+      alt="Weather Icon"
+      className="w-i"
+      src="http://openweathermap.org/img/w/11d.png"
+    />
+    <u>
+      <span
+        className="temp"
+      >
+        Thunderstorm
+      </span>
+       
+      <span
+        className="temp"
+      >
+        NaN
+        °F
+      </span>
+    </u>
+  </div>
+  <table
+    className="table"
+  >
+    <tbody>
+      <tr>
+        <td>
+          Wind
+        </td>
+        <td>
+          6
+           km/h
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Pressure
+        </td>
+        <td>
+          1005
+           hPa
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Humidity
+        </td>
+        <td>
+          100
+          %
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Min Temp
+        </td>
+        <td>
+          NaN
+          °F
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Max Temp
+        </td>
+        <td>
+          NaN
+          °F
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Weather component without data 1`] = `<div />`;
