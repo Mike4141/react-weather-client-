@@ -69,9 +69,12 @@ class App extends Component {
       .catch(error => {
         console.log(error);
         console.log("invalid search");
+        
         this.setState({ invalidSearchError: true });
       });
   };
+
+
 
   getCityList = () => {
     fetch(`${apiBaseUrl}/api/cities`)
@@ -126,6 +129,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getCityList();
+
   }
 
   render() {
