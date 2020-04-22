@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Home from "./home";
+import Home from "./Components/Home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { apiBaseUrl } from "./config";
 
