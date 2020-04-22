@@ -1,283 +1,246 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .temp {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 body {
-  font-family: 'Bangers', cursive;
-  background: url(https://scx1.b-cdn.net/csz/news/800/2018/1-whytheweathe.jpg) no-repeat;
-  background-size: 2000px 2500px;
-
-  margin: 0;
-  padding: 0;
+    font-family: 'Bangers', cursive;
+    background: url(https://scx1.b-cdn.net/csz/news/800/2018/1-whytheweathe.jpg) no-repeat;
+    background-size: 2000px 2500px;
+    margin: 0;
+    padding: 0;
 }
 
 .delete-btn {
-  background-color:#f44336; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 15px;
-  font-family: 'Bangers', cursive;
-  align-items: center;
-
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    font-family: 'Bangers', cursive;
+    align-items: center;
 }
 
-input{
-  display: block;
-  width: auto;
-  height: 20px;
-  font-size: 15px;
-  text-align: left;
-  padding: 15px;
-  border: 3px solid #302e2e;
-  background: #fcfcfc;
-  transition: opacity 0.4s;
-  align-items: center;
-  margin-right: 20px;
+input {
+    display: block;
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+    border: 3px solid #302e2e;
+    background: #fcfcfc;
+    transition: opacity 0.4s;
+    align-items: center;
+    margin-right: 20px;
 }
-
-
 
 .cities:focus {
-  background-color: yellow;
-  margin:auto;
-
+    background-color: yellow;
+    margin: auto;
 }
 
 .selector {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .selector:hover {
-  color: red;
+    color: red;
 }
 
-
 .select {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 20px;
-  font-family: 'Bowlby One SC', cursive;
-  text-decoration: underline;
-  font-size: 25px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+    font-family: 'Bowlby One SC', cursive;
+    text-decoration: underline;
+    font-size: 25px;
 }
 
 .cw {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
 }
 
-
-
- .current {
-   margin-top: 146px;
-   text-align: center;
-   font-family: 'Bangers', cursive;
-
- }
+.current {
+    margin-top: 146px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+}
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .btn {
-margin: 100px 0;
-background-color: #29ff0db9; ; 
-border: none;
-color: white;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-font-size: 20px;
-border-radius: 15px;
-font-family: 'Bangers', cursive;
-
+    margin: 100px 0;
+    background-color: #29ff0db9;
+    ;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: 'Bangers', cursive;
 }
 
-
-
-
-
-.table{
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  text-decoration: underline;
-  margin-top: 50px ;
-  margin-bottom: 100px;
-  border:5px solid;
-  border-radius: 20px;
-  height: 500px;
-  font-size: 20px;
+.table {
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 5px solid;
+    border-radius: 20px;
+    height: 500px;
+    font-size: 20px;
 }
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-  flex-direction: column;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .w-header {
-  display: flex;
-  justify-content: center;
-  
+    display: flex;
+    justify-content: center;
 }
 
 .changes {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-
 .ct {
-  display: flex;
-  justify-content: space-between;
-  margin:20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .cities {
-  max-width: 4000px;
-  margin-left: 25px;
-  margin-right: 80px;
-  margin-bottom: 100px;
-  font-size: 30px;
-
+    max-width: 4000px;
+    margin-left: 25px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    font-size: 30px;
 }
 
 .bg {
-  padding-top: 90px;
-  margin: 20px;
-  border: 1px solid #BFBFBF;
-  background-color:rgba(12, 12, 15, 0.534);
-  border-radius: 50px;
-  border: 3px solid;
-  font-family: 'Bangers', cursive;
+    padding-top: 90px;
+    margin: 20px;
+    border: 1px solid #BFBFBF;
+    background-color: rgba(12, 12, 15, 0.534);
+    border-radius: 50px;
+    border: 3px solid;
+    font-family: 'Bangers', cursive;
 }
 
- p {
-  font-family: 'Bowlby One SC', cursive;
+p {
+    font-family: 'Bowlby One SC', cursive;
+}
 
- }
- .current-w {
-   font-size: 20px;
- }
-
-
+.current-w {
+    font-size: 20px;
+}
 
 .city-weather {
-  text-align: center;
-  font-size: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .navbar {
-  height:80px;
-  display:flex;
-  flex-direction:row-start;
-  margin-bottom:100px;
-  padding-bottom:60px;
-  padding-left:20px;
-  border-bottom: 3px solid black;
-  background-color:rgba(12, 12, 15, 0.534);
-  font-size:20px;
-  font-family: 'Bangers', cursive;
+    height: 80px;
+    display: flex;
+    flex-direction: row-start;
+    margin-bottom: 100px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    border-bottom: 3px solid black;
+    background-color: rgba(12, 12, 15, 0.534);
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}
 
-  
-
-  
-
-
-
-  }
-
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .bg {
-      margin-right:200px;
-      margin-left:200px;
-        }
+        margin-right: 200px;
+        margin-left: 200px;
+    }
     h1 {
-      font-size: 55px;
+        font-size: 55px;
     }
     .table {
-      font-size: 30px;
-      max-width: 1250px;
-    } 
+        font-size: 30px;
+        max-width: 1250px;
+    }
     .cities {
-      margin-left: 270px;
-      margin-right: 285px;
-      margin-bottom: 100px;
-      font-size: 50px;
-      }
-    
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  }
-  .temp {
-    font-size: 40px;
-  }
-  
+        margin-left: 270px;
+        margin-right: 285px;
+        margin-bottom: 100px;
+        font-size: 50px;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .temp {
+        font-size: 40px;
+    }
 }
-    
-        
-    
-    
-
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-
-
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
