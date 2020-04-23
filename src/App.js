@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 import Home from "./Components/Home/Home";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { apiBaseUrl } from "./config";
 
 class App extends Component {
+
   constructor(props) {
     super(props);
 
@@ -17,16 +18,14 @@ class App extends Component {
     };
   };
 
+
   handleInputChange = e => {
-    console.log("stored cities");
     this.setState({ newCityName: e.target.value });
   };
 
+
   handleAddCity = e => {
     e.preventDefault();
-    console.log(`${apiBaseUrl}/api/weather/${this.state.newCityName}`);
-    console.log(this.state.newCityName);
-
     this.setState({ 
       error: false,
       invalidSearchError:false,
@@ -35,15 +34,12 @@ class App extends Component {
 
     fetch(`${apiBaseUrl}/api/weather/${this.state.newCityName}`)
       .then(res => {
-        console.log(res);
         if (res.ok) {
           return res.json();
         };
         throw new Error(res.status);
-        //return res.json();
       })
       .then(weather => {
-        console.log(weather);
         this.setState({ weather });
         fetch(`${apiBaseUrl}/api/cities`, {
           method: "post",
@@ -63,32 +59,27 @@ class App extends Component {
           .then(res => {
             this.getCityList();
             this.setState({ newCityName: "" });
-            console.log();
           })
           .catch(error => {
             console.log(error);
-            console.log("cant duplicate");
             this.setState({ duplicateError: true });
           });
       })
       .catch(error => {
         console.log(error);
-        console.log("invalid search");
-        
         this.setState({ invalidSearchError: true });
       });
   };
-
 
 
   getCityList = () => {
     fetch(`${apiBaseUrl}/api/cities`)
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         this.setState({ cityList: res });
       });
   };
+
 
   deleteCity = cityId => {
     this.setState({
@@ -97,9 +88,9 @@ class App extends Component {
       })
     });
   };
-  handleDelete = cityId => {
-    console.log("deleted", cityId);
 
+
+  handleDelete = cityId => {
     fetch(`${apiBaseUrl}/api/cities/${cityId}`, {
       method: "DELETE"
     }).then(res => {
@@ -109,33 +100,34 @@ class App extends Component {
     });
   };
 
+
   handleChangeCity = e => {
-    console.log("city changed to", e);
     this.getWeather(e);
   };
+
 
   getWeather = city => {
     fetch(`${apiBaseUrl}/api/weather/${city}`)
       .then(res => res.json())
       .then(weather => {
-        console.log(weather);
         this.setState({ weather });
       });
   };
+
 
   getCityList = () => {
     fetch(`${apiBaseUrl}/api/cities`)
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         this.setState({ cityList: res });
       });
   };
 
+
   componentDidMount() {
     this.getCityList();
-
   }
+
 
   render() {
     return (
@@ -158,6 +150,7 @@ class App extends Component {
       </Router>
     );
   }
+
 }
 
 export default App;

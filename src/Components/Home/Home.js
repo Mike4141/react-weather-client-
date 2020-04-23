@@ -3,14 +3,8 @@ import Weather from "../Weather/Weather";
 
 class Home extends Component {
 
-  
-
   render() {
-    
 
-
-    
-    console.log(this.props.cityList);
     return (
       <div>
         <div className="navbar">
@@ -37,7 +31,7 @@ class Home extends Component {
               </div>
 
               <div className="changes">
-              {this.props.invalidSearchError && <p>invalid search</p>}
+                {this.props.invalidSearchError && <p>invalid search</p>}
 
               </div>
 
