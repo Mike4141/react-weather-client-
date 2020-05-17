@@ -84,7 +84,7 @@ class App extends Component {
   deleteCity = cityId => {
     this.setState({
       cityList: this.state.cityList.filter(city => {
-        return cityId != city.id;
+        return cityId !== city.id;
       })
     });
   };

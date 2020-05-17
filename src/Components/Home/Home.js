@@ -8,14 +8,7 @@ class Home extends Component {
     return (
       <div>
         <div className="navbar">
-          <link
-            href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC&display=swap"
-            rel="stylesheet"
-          />
+         
           <h2>My Weather</h2>
         </div>
 
@@ -26,16 +19,16 @@ class Home extends Component {
                 <h1>My Weather</h1>
               </div>
 
-              <div className="changes">
+              <div className="center">
                 <p>The current weather for your favorite cities!</p>
               </div>
 
-              <div className="changes">
+              <div className="center">
                 {this.props.invalidSearchError && <p>invalid search</p>}
 
               </div>
 
-              <div className="changes">
+              <div className="center">
                 {this.props.duplicateError && <p>City Already Exist</p>}
               </div>
 
@@ -67,7 +60,7 @@ class Home extends Component {
             {this.props.cityList.map(
               (city, i) =>
                 console.log(city) || (
-                  <li className="ct" key={i}>
+                  <li className="w-table" key={i}>
                     <span
                       className="selector"
                       onClick={() => this.props.handleChangeCity(city.name)}

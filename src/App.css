@@ -42,17 +42,12 @@ input {
     margin-right: 20px;
 }
 
-.cities:focus {
-    background-color: yellow;
-    margin: auto;
-}
 
-.selector {
-    cursor: pointer;
-}
+
 
 .selector:hover {
     color: red;
+    cursor:pointer;
 }
 
 .select {
@@ -73,25 +68,14 @@ input {
     margin-bottom: 20px;
 }
 
-.current {
-    margin-top: 146px;
-    text-align: center;
-    font-family: 'Bangers', cursive;
-}
 
-.App {
-    text-align: center;
-}
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+
 
 .btn {
     margin: 100px 0;
     background-color: #29ff0db9;
-    ;
+    cursor:pointer;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -132,12 +116,12 @@ input {
     justify-content: center;
 }
 
-.changes {
+.center {
     display: flex;
     justify-content: center;
 }
 
-.ct {
+.w-table {
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -187,6 +171,14 @@ p {
     font-family: 'Bangers', cursive;
 }
 
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1024px) {
     .bg {
         margin-right: 200px;
@@ -205,42 +197,9 @@ p {
         margin-bottom: 100px;
         font-size: 50px;
     }
-    .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+   
     .temp {
         font-size: 40px;
     }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
