@@ -5,14 +5,6 @@ exports[`Home component on duplicate entry 1`] = `
   <div
     className="navbar"
   >
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
     <h2>
       My Weather
     </h2>
@@ -32,17 +24,17 @@ exports[`Home component on duplicate entry 1`] = `
           </h1>
         </div>
         <div
-          className="changes"
+          className="center"
         >
           <p>
             The current weather for your favorite cities!
           </p>
         </div>
         <div
-          className="changes"
+          className="center"
         />
         <div
-          className="changes"
+          className="center"
         >
           <p>
             City Already Exist
@@ -80,7 +72,7 @@ exports[`Home component on duplicate entry 1`] = `
   >
     <ul>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -96,7 +88,7 @@ exports[`Home component on duplicate entry 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -112,7 +104,7 @@ exports[`Home component on duplicate entry 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -128,7 +120,7 @@ exports[`Home component on duplicate entry 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -144,7 +136,7 @@ exports[`Home component on duplicate entry 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -170,14 +162,6 @@ exports[`Home component on invalid search 1`] = `
   <div
     className="navbar"
   >
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
     <h2>
       My Weather
     </h2>
@@ -197,21 +181,21 @@ exports[`Home component on invalid search 1`] = `
           </h1>
         </div>
         <div
-          className="changes"
+          className="center"
         >
           <p>
             The current weather for your favorite cities!
           </p>
         </div>
         <div
-          className="changes"
+          className="center"
         >
           <p>
             invalid search
           </p>
         </div>
         <div
-          className="changes"
+          className="center"
         >
           <p>
             City Already Exist
@@ -249,7 +233,7 @@ exports[`Home component on invalid search 1`] = `
   >
     <ul>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -265,7 +249,7 @@ exports[`Home component on invalid search 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -281,7 +265,7 @@ exports[`Home component on invalid search 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -297,7 +281,7 @@ exports[`Home component on invalid search 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -313,7 +297,7 @@ exports[`Home component on invalid search 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -339,14 +323,6 @@ exports[`Home component with initial data 1`] = `
   <div
     className="navbar"
   >
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC&display=swap"
-      rel="stylesheet"
-    />
     <h2>
       My Weather
     </h2>
@@ -366,17 +342,17 @@ exports[`Home component with initial data 1`] = `
           </h1>
         </div>
         <div
-          className="changes"
+          className="center"
         >
           <p>
             The current weather for your favorite cities!
           </p>
         </div>
         <div
-          className="changes"
+          className="center"
         />
         <div
-          className="changes"
+          className="center"
         />
         <div
           className="flex"
@@ -410,7 +386,7 @@ exports[`Home component with initial data 1`] = `
   >
     <ul>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -426,7 +402,7 @@ exports[`Home component with initial data 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -442,7 +418,7 @@ exports[`Home component with initial data 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -458,7 +434,7 @@ exports[`Home component with initial data 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"
@@ -474,7 +450,7 @@ exports[`Home component with initial data 1`] = `
         </button>
       </li>
       <li
-        className="ct"
+        className="w-table"
       >
         <span
           className="selector"

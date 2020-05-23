@@ -16,7 +16,7 @@ class Home extends Component {
           <div className="bg">
             <form onSubmit={this.props.handleAddCity}>
               <div className="w-header">
-                <h1>My Weather</h1>
+                <h1> Weather</h1>
               </div>
 
               <div className="center">
